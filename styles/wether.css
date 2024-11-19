@@ -1,0 +1,122 @@
+.app {
+    background: linear-gradient(180deg, #2E3358, #1C1B33);
+    box-shadow: -40px 60px 150px 0px #3B267BB2;
+    font-family: sans-serif;
+
+    padding: 0 16px;
+}
+
+.app__header {
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 34px;
+    text-align: left;
+
+    color: #fff;
+
+    margin-left: 30px;
+}
+
+.app__search {
+    background: linear-gradient(180deg, #2E3358, #1C1B33);
+    box-shadow: 0px 4px 4px 0px #00000040 inset;
+
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    padding: 7px 8px;
+
+    border-radius: 10px;
+}
+
+.app__search img {
+    width: 15px;
+}
+
+.app__search input {
+    width: 100%;
+    background: transparent;
+    border: 0;
+
+    color: #EBEBF599;
+
+    font-size: 17px;
+    line-height: 20px;
+}
+
+.app__search input:focus {
+    border: 0;
+    outline: 0;
+}
+
+.app__list {
+    padding: 20px;
+}
+
+.wether__card {
+    background-image: url("../imgs/bg_card.svg");
+    background-position: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+
+    aspect-ratio: 1.581 / 1;
+
+    position: relative;
+}
+
+.card__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.card__temperature {
+    font-family: sans-serif;
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 70px;
+    letter-spacing: 0.37400001287460327px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+    color: #fff;
+}
+
+.card__icon {
+    max-width: 130px;
+    min-width: 45px;
+    margin-right: -20px;
+
+    aspect-ratio: auto 1 / 1;
+}
+
+.card__main {
+    margin-top: 20px;
+}
+
+.temperature {
+    color: #EBEBF599;
+    font-size: 13px;
+}
+
+.card__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6px;
+
+    color: #fff;
+}
+
+.info__location {
+    font-size: 17px;
+}
+
+.info__state {
+    font-size: 13px;
+}
