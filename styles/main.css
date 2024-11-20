@@ -1,12 +1,14 @@
 .app {
     background-image: url("../imgs/bg_sky.png");
     background-size: cover;
+    box-shadow: -40px 60px 150px 0px #3B267BB2;
 }
 
 .app-content {
     color: white;
     text-align: center;
-    font-family: sans-serif;
+
+    font-family: var(--font-family-display);
 
     margin-top: 120px;
 
@@ -16,11 +18,12 @@
 
 .app-location {
     font-size: 34px;
+    font-weight: 400;
 }
 
 .app-temperature {
     font-size: 96px;
-
+    font-weight: 200;
 }
 
 .house {
