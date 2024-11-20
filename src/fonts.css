@@ -1,0 +1,75 @@
+/* SF Pro Text */
+
+@font-face {
+    font-family: "SF Pro Text";
+    font-style: normal;
+    font-weight: 400;
+    font-display: block;
+    src: url("/fonts/SEProText/SFProText-Regular.ttf") format("truetype");
+}
+
+
+@font-face {
+    font-family: "SF Pro Text";
+    font-weight: 200;
+    font-style: normal;
+    font-display: block;
+    src: url("/fonts/SEProText/SFProText-Light.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "SF Pro Text";
+    font-weight: 400;
+    font-style: italic;
+    font-display: block;
+    src: url("/fonts/SEProText/SFProText-RegularItalic.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "SF Pro Text";
+    font-weight: 200;
+    font-style: italic;
+    font-display: block;
+    src: url("/fonts/SEProText/SFProText-LightItalic.ttf") format("truetype");
+}
+
+/* SF Pro Display */
+
+@font-face {
+    font-family: "SF Pro Display";
+    font-weight: 400;
+    font-style: normal;
+    font-display: block;
+    src: url("/fonts/SEProDisplay/SF-Pro-Display-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "SF Pro Display";
+    font-weight: 200;
+    font-style: normal;
+    font-display: block;
+    src: url("/fonts/SEProDisplay/SF-Pro-Display-Light.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "SF Pro Display";
+    font-weight: 400;
+    font-style: italic;
+    font-display: block;
+    src: url("/fonts/SEProDisplay/SF-Pro-Display-RegularItalic.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "SF Pro Display";
+    font-weight: 200;
+    font-style: italic;
+    font-display: block;
+    src: url("/fonts/SEProDisplay/SF-Pro-Display-LightItalic.otf") format("opentype");
+}
+
+/* Variables */
+
+:root {
+    --font-family-display: "SF Pro Display";
+    --font-family-text: "SF Pro Text";
+}
