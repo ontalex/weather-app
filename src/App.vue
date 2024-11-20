@@ -2,6 +2,9 @@
 </script>
 
 <template>
+    <router-view></router-view>
 </template>
 
-<style scoped></style>
+<style type="css" scoped>
+
+</style>
