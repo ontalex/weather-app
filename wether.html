@@ -8,89 +8,95 @@
 
     <link rel="stylesheet" href="./styles/fonts.css">
     <link rel="stylesheet" href="./styles/index.css">
-    <link rel="stylesheet" href="./styles/wether.css">
+    <link rel="stylesheet" href="./styles/weather.css">
 
     <title>Weather</title>
 </head>
 
 <body>
-    <div class="app">
-        <div class="app__head">
-            <h1 class="app__header">Weather</h1>
-            <label class="app__search" for="search">
-                <img src="./imgs/icon_search.svg" alt="">
-                <input type="text" name="search" id="search" placeholder="Search for a city or airport"
-                    autocomplete="address-level1">
-            </label>
+<div class="app">
+    <h1 class="app__header">Weather</h1>
+    <label class="search" for="search">
+        <input class="search__input" type="text" name="search" id="search" placeholder="Search for a city or airport"
+               autocomplete="address-level1">
+        <svg class="search__icon" width="16" height="16" viewBox="0 0 16 16" fill="none"
+             xmlns="http://www.w3.org/2000/svg">
+            <path d="M6.3833 12.8767C7.76953 12.8767 9.04785 12.4285 10.0938 11.6814L14.0283 15.616C14.2109 15.7986 14.4517 15.8899 14.709 15.8899C15.2485 15.8899 15.6304 15.4749 15.6304 14.9436C15.6304 14.6946 15.5474 14.4539 15.3647 14.2795L11.4551 10.3616C12.2769 9.28247 12.7666 7.94604 12.7666 6.49341C12.7666 2.98218 9.89453 0.110107 6.3833 0.110107C2.88037 0.110107 0 2.97388 0 6.49341C0 10.0046 2.87207 12.8767 6.3833 12.8767ZM6.3833 11.4988C3.64404 11.4988 1.37793 9.23267 1.37793 6.49341C1.37793 3.75415 3.64404 1.48804 6.3833 1.48804C9.12256 1.48804 11.3887 3.75415 11.3887 6.49341C11.3887 9.23267 9.12256 11.4988 6.3833 11.4988Z"
+                  fill="currentColor"/>
+        </svg>
+    </label>
+    <div class="app__list">
+        
+        <div class="wether-card">
+            <div class="wether-card__header">
+                <div class="wether-card__temperature--main">19°</div>
+                <img class="wether-card__icon" src="./imgs/wethers/icon_night_cloud_rain.png" alt="mid rain icon">
+            </div>
+            <div class="wether-card__main">
+                <div class="wether-card__minmax">
+                    <span class="wether-card__temperature">H:24°</span>
+                    <span class="wether-card__temperature">L:18°</span>
+                </div>
+                <div class="wether-card__info">
+                    <span class="wether-card__location">Bengaluru, India</span>
+                    <span class="wether-card__state">Mid Rain</span>
+                </div>
+            </div>
         </div>
-        <div class="app__list">
-            <div class="wether__card">
-                <div class="card__header">
-                    <div class="card__temperature">19°</div>
-                    <img class="card__icon" src="./imgs/wethers/icon_night_cloud_rain.png" alt="mid rain icon">
+        
+        <div class="wether-card">
+            <div class="wether-card__header">
+                <div class="wether-card__temperature--main">22°</div>
+                <img class="wether-card__icon" src="./imgs/wethers/icon_night_wind.png" alt="fast wind icon">
+            </div>
+            <div class="wether-card__main">
+                <div class="wether-card__minmax">
+                    <span class="wether-card__temperature">H:26°</span>
+                    <span class="wether-card__temperature">L:18°</span>
                 </div>
-                <div class="card__main">
-                    <div class="card__minmax">
-                        <span class="temperature">H:24°</span>
-                        <span class="temperature">L:18°</span>
-                    </div>
-                    <div class="card__info">
-                        <span class="info__location">Bengaluru, India</span>
-                        <span class="info__state">Mid Rain</span>
-                    </div>
+                <div class="wether-card__info">
+                    <span class="wether-card__location">Chennai, India</span>
+                    <span class="wether-card__state">Fast Wind</span>
                 </div>
             </div>
-            <div class="wether__card">
-                <div class="card__header">
-                    <div class="card__temperature">22°</div>
-                    <img class="card__icon" src="./imgs/wethers/icon_night_wind.png" alt="fast wind icon">
+        </div>
+        
+        <div class="wether-card">
+            <div class="wether-card__header">
+                <div class="wether-card__temperature--main">20°</div>
+                <img class="wether-card__icon" src="./imgs/wethers/icon_cloud_storm.png" alt="storm icon">
+            </div>
+            <div class="wether-card__main">
+                <div class="wether-card__minmax">
+                    <span class="wether-card__temperature">H:16°</span>
+                    <span class="wether-card__temperature">L:23°</span>
                 </div>
-                <div class="card__main">
-                    <div class="card__minmax">
-                        <span class="temperature">H:26°</span>
-                        <span class="temperature">L:18°</span>
-                    </div>
-                    <div class="card__info">
-                        <span class="info__location">Chennai, India</span>
-                        <span class="info__state">Fast Wind</span>
-                    </div>
+                <div class="wether-card__info">
+                    <span class="wether-card__location">Mumbai, India</span>
+                    <span class="wether-card__state">Thunderstorm</span>
                 </div>
             </div>
-            <div class="wether__card">
-                <div class="card__header">
-                    <div class="card__temperature">20°</div>
-                    <img class="card__icon" src="./imgs/wethers/icon_cloud_storm.png" alt="storm icon">
+        </div>
+        
+        <div class="wether-card">
+            <div class="wether-card__header">
+                <div class="wether-card__temperature--main">29°</div>
+                <img class="wether-card__icon" src="./imgs/wethers/icon_cloud_rain.png" alt="cloudy icon">
+            </div>
+            <div class="wether-card__main">
+                <div class="wether-card__minmax">
+                    <span class="wether-card__temperature">H:32°</span>
+                    <span class="wether-card__temperature">L:27°</span>
                 </div>
-                <div class="card__main">
-                    <div class="card__minmax">
-                        <span class="temperature">H:16°</span>
-                        <span class="temperature">L:23°</span>
-                    </div>
-                    <div class="card__info">
-                        <span class="info__location">Mumbai, India</span>
-                        <span class="info__state">Thunderstorm</span>
-                    </div>
+                <div class="wether-card__info">
+                    <span class="wether-card__location">Delhi, India</span>
+                    <span class="wether-card__state">Cloudy</span>
                 </div>
             </div>
-            <div class="wether__card">
-                <div class="card__header">
-                    <div class="card__temperature">29°</div>
-                    <img class="card__icon" src="./imgs/wethers/icon_cloud_rain.png" alt="cloudy icon">
-                </div>
-                <div class="card__main">
-                    <div class="card__minmax">
-                        <span class="temperature">H:32°</span>
-                        <span class="temperature">L:27°</span>
-                    </div>
-                    <div class="card__info">
-                        <span class="info__location">Delhi, India</span>
-                        <span class="info__state">Cloudy</span>
-                    </div>
-                </div>
-            </div>
+        </div>
 
-        </div>
     </div>
+</div>
 </body>
 
 </html>
