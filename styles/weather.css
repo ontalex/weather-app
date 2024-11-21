@@ -8,6 +8,21 @@
     overflow-y: auto;
 }
 
+.app::-webkit-scrollbar-button {
+
+}
+
+.app::-webkit-scrollbar-thumb {
+    background-color: white;
+    opacity: 0.75;
+    border-radius: 15px;
+}
+
+.app::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
 .app__header {
     /*font-size: 28px;*/
     font-size: 1.75rem;
